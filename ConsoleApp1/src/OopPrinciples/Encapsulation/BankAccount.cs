@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-//Encapsulation is bundling data and methods that work on that data within one unit, 
-//and restricting direct access to that data.
+//Encapsulation is bundling data and methods of private classes so users can easily interface with them
+//in a public setting 
 
 namespace ConsoleApp1.src.OopPrinciples.Encapsulation
 {
