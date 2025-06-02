@@ -11,4 +11,6 @@
 
 
 //---Abstraction---
-using ConsoleApp1.src.OopPrinciples.Abstraction; 
+using ConsoleApp1.src.OopPrinciples.Abstraction;
+EmailService emailService = new EmailService();
+emailService.SendEmail();
