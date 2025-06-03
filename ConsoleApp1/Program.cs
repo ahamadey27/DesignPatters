@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
+
 
 //---Encapsulation--- 
 // using ConsoleApp1.src.OopPrinciples.Encapsulation;
@@ -9,9 +11,19 @@
 // bankAccount.Withdraw(100);
 // Console.WriteLine(bankAccount.GetBalance());
 
-
+/*
 //---Abstraction---
 using ConsoleApp1.src.OopPrinciples.Abstraction;
 //Create an instance of of EmailService to call method
 EmailService emailService = new EmailService();
-emailService.SendEmail();
+emailService.SendEmail();*/
+
+//---Inheritance---
+using ConsoleApp1.src.OopPrinciples.Inheritance;
+
+var car = new Car();
+
+//Shared
+car.Brand = "Ford";
+car.Start();
+car.Stop();
