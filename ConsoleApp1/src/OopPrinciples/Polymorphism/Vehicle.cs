@@ -12,12 +12,15 @@ namespace ConsoleApp1.src.OopPrinciples.Polymorphism
         public string Model { get; set; }
         public int Year { get; set; }
 
-        public virtual void Start()
+        public virtual void Start() //virtual methods can be overwirtten by any sub/child classes
         {
             Console.WriteLine("Vehicle is starting");
         }
 
-        public 
+        public virtual void Stop()
+        {
+            Console.WriteLine("Vechile is stopping");
+        } 
 
     }
 }

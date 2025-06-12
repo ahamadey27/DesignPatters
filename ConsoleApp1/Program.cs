@@ -19,11 +19,28 @@ EmailService emailService = new EmailService();
 emailService.SendEmail();*/
 
 //---Inheritance---
-using ConsoleApp1.src.OopPrinciples.Inheritance;
+/*using ConsoleApp1.src.OopPrinciples.Inheritance;
 
 var car = new Car();
 
 //Shared
 car.Brand = "Ford";
 car.Start();
-car.Stop();
+car.Stop();*/
+
+//---Polymorphism---
+using ConsoleApp1.src.OopPrinciples.Polymorphism;
+
+List<Vehicle> vehicles = new List<Vehicle>
+{
+    new Car {Brand = "Toyota", Model = "Camry", Year = 2020, NumberOfDoors = 4},
+    new Car {Brand = "Harley", Model = "Sportser", Year = 2022,}
+};
+
+foreach (var vehicle in vehicles)
+{
+    Console.WriteLine($"Inspecting {vehicle.Brand} {vehicle.Model} ({vehicle.GetType().Name})");
+    vehicle.Start();
+    vehicle.Stop();
+    Console.WriteLine();
+}
