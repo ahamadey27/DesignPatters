@@ -10,13 +10,18 @@ using System.Runtime.CompilerServices;
 // Console.WriteLine(bankAccount.GetBalance());
 // bankAccount.Withdraw(100);
 // Console.WriteLine(bankAccount.GetBalance());
-
 /*
+
+
+
+
 //---Abstraction---
 using ConsoleApp1.src.OopPrinciples.Abstraction;
 //Create an instance of of EmailService to call method
 EmailService emailService = new EmailService();
 emailService.SendEmail();*/
+
+
 
 //---Inheritance---
 /*using ConsoleApp1.src.OopPrinciples.Inheritance;
@@ -28,8 +33,11 @@ car.Brand = "Ford";
 car.Start();
 car.Stop();*/
 
+
+
+
 //---Polymorphism---
-using ConsoleApp1.src.OopPrinciples.Polymorphism;
+/*using ConsoleApp1.src.OopPrinciples.Polymorphism;
 
 List<Vehicle> vehicles = new List<Vehicle>
 {
@@ -43,4 +51,14 @@ foreach (var vehicle in vehicles)
     vehicle.Start();
     vehicle.Stop();
     Console.WriteLine();
-}
+}*/
+
+
+
+
+//---Coupling---
+using ConsoleApp1.src.OopPrinciples.Coupling;
+var order = new Order(new EmailSender());
+order.PlaceOrder();
+
+
