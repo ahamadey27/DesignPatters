@@ -58,7 +58,7 @@ foreach (var vehicle in vehicles)
 
 //---Coupling---
 using ConsoleApp1.src.OopPrinciples.Coupling;
-var order = new Order(new EmailSender());
+var order = new Order(new SmsSender());
 order.PlaceOrder();
 
 
